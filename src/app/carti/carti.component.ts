@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-carti',
@@ -14,6 +14,7 @@ export class CartiComponent implements OnInit {
   constructor() { 
     console.log("contructor")
   }
+  @Input() item =0
 
   ngOnInit(): void {
     console.log("ngonItnit")
