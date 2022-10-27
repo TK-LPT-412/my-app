@@ -1,0 +1,16 @@
+<h3>Fruits!</h3>
+
+<tr *ngFor="let hero of fruit; let i = index">
+
+
+<table>
+    <thead>
+        <th>{{hero.name}}</th> <input type="number" #box> <button (click)="updateDataEvent.emit(box.value)">Add Count</button>
+        <th>{{hero.price}}</th>
+        <th>{{hero.count}}</th>
+
+    </thead>
+
+</table>
+
+</tr>
