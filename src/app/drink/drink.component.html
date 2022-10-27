@@ -1,0 +1,16 @@
+<h3>Drinks {{drinkCount}}!</h3>
+<tr *ngFor="let d of drink; let i = index">
+
+
+    <table>
+        <thead>
+            <th>{{d.name}}</th> <input type="number" #box> <button (click)="updateDataEvent.emit({category: 'drink', name: d.name, count: box.value}); updateData(box.value)">Add Count</button>
+            <th>{{d.price}}</th>
+            <th>{{d.count}}</th>
+    
+        </thead>
+    
+    </table>
+    
+    </tr>
+    
