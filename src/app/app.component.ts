@@ -7,5 +7,19 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'my-app';
-  data = 10;
+  data = {username: 'hammad', password: 123};
+  popup = true
+
+  loginUser(is:any){
+   
+    if(is.name == this.data.username) {
+      this.popup  = false
+    }
+
+
+  }
+
+
+
+
 }

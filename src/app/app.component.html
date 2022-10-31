@@ -1,5 +1,42 @@
-<app-carti [item]="data"></app-carti>
+<!-- <app-carti [item]="data"></app-carti> -->
 <!-- <app-carto></app-carto> -->
+
+
+<button type="button"(click)="popup = true">
+   
+
+  <form #loginForm="ngForm" (ngSubmit)="loginUser(loginForm.value)"*ngIf="popup">
+    SignIn
+    <br> <br>
+    <input type="text" name="name" placeholder="Enter name"   ngModel>
+    <br> <br>
+    <input type="password" name="password" placeholder="Enter password"   ngModel>
+    <br> <br>
+    <button> Login </button>>    
+  </form>
+
+</button>
+ 
+ <div>
+ 
+ <div class="overlay" *ngIf="popup">
+     <div class="popup">
+
+      <br>
+      <br>
+         <a class="close" (click)="popup = true">&times;</a>
+         <div class="content">
+         you have selected this event
+         </div>
+     </div>
+ </div>
+ </div>
+
+
+
+ <app-items *ngIf=" popup == false"></app-items>
+
+
 
 
 
