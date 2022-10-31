@@ -11,6 +11,7 @@ import { DrinkComponent } from './drink/drink.component';
 import { EducationComponent } from './education/education.component';
 import { BookComponent } from './book/book.component';
 import { UsdStdPipe } from './usd-std.pipe';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { UsdStdPipe } from './usd-std.pipe';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
