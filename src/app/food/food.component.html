@@ -1,5 +1,5 @@
 <h2> Food Count {{foodCount}}</h2>
-<app-fruit [fruit]="food.fruit" (updateDataEvent)="updateData($event)"></app-fruit>
-<app-drink [drink]="food.drink" (updateDataEvent)="updateData($event)"></app-drink>
+<app-fruit [fruit]="food.fruit" (updateDataEvent)="updateDataOf($event)" (addFruitEvent)="addFruitOf($event)"></app-fruit>
+<app-drink [drink]="food.drink" (updateDataEvent)="updateDataOf($event)"></app-drink>
 
 

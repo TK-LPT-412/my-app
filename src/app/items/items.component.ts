@@ -14,7 +14,11 @@ export class ItemsComponent implements OnInit {
   }
   itemsCount= 0;
 
-  updateData(is: any) {
+  addItem(is: any) {
+    this.items.food.fruit.push(is)
+  }
+
+  updateItem(is: any) {
     this.itemsCount = this.itemsCount + Number(is)
   }
   items = {

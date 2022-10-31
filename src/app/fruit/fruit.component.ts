@@ -14,13 +14,20 @@ export class FruitComponent implements OnInit {
   }
   @Input() fruit : any;
   @Output() updateDataEvent = new EventEmitter<any>();
+  @Output() addFruitEvent = new EventEmitter<any>();
+  popup = false
   fruitCount = 0
 
+  addFruit(is:any) {
+    
+    this.addFruitEvent.emit(is);
+  }
 
-  updateData(count: any) {
+  updateData(is: any) {
 
     // this.food.fruit[0].count = this.food.fruit[0].count + Number (event.count);
-    this.fruitCount = this.fruitCount+ Number(count) 
+    this.fruitCount = this.fruitCount+ Number(is.count)
+    this.updateDataEvent.emit(is); 
     // alert(is)
     // console.log(30000)
   }
