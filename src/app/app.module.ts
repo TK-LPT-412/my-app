@@ -10,6 +10,7 @@ import { FruitComponent } from './fruit/fruit.component';
 import { DrinkComponent } from './drink/drink.component';
 import { EducationComponent } from './education/education.component';
 import { BookComponent } from './book/book.component';
+import { UsdStdPipe } from './usd-std.pipe';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { BookComponent } from './book/book.component';
     DrinkComponent,
     EducationComponent,
     BookComponent,
+    UsdStdPipe,
   ],
   imports: [
     BrowserModule,
