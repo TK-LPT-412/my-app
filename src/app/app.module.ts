@@ -4,11 +4,23 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CartiComponent } from './carti/carti.component';
+import { FoodComponent } from './food/food.component';
+import { ItemsComponent } from './items/items.component';
+import { FruitComponent } from './fruit/fruit.component';
+import { DrinkComponent } from './drink/drink.component';
+import { EducationComponent } from './education/education.component';
+import { BookComponent } from './book/book.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CartiComponent,
+    FoodComponent,
+    ItemsComponent,
+    FruitComponent,
+    DrinkComponent,
+    EducationComponent,
+    BookComponent,
   ],
   imports: [
     BrowserModule,
