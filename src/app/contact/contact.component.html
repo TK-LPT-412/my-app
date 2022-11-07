@@ -1,0 +1,18 @@
+<p>contact works!</p>
+
+<tr *ngFor="let f of contacts; let i = index">
+
+
+    <table>
+        <thead>
+            <th><a routerLink="user/{{f.name}}" >{{f.name}}</a></th>
+            <th>{{f.email}}</th> 
+            <th>{{f.no}}</th>
+    
+        </thead>
+    
+    </table>
+
+    <router-outlet></router-outlet>
+
+    </tr>

@@ -33,7 +33,7 @@
 <table>
     <thead>
         <th>{{f.name}}</th> <input type="number" placeholder="Add count of fruit" #box> <button (click)="updateData({category: 'fruit', name: f.name, count: box.value})">Add Count</button>
-        <th>{{f.price | usdStd: 140}}</th>
+        <th>{{f.price | usdStd: 140}}</th> 
         <th>{{f.count}}</th>
 
     </thead>
@@ -41,3 +41,7 @@
 </table>
 
 </tr>
+
+
+
+<router-outlet></router-outlet>

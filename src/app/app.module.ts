@@ -12,6 +12,8 @@ import { EducationComponent } from './education/education.component';
 import { BookComponent } from './book/book.component';
 import { UsdStdPipe } from './usd-std.pipe';
 import { FormsModule } from '@angular/forms';
+import { ProductComponent } from './product/product.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +26,8 @@ import { FormsModule } from '@angular/forms';
     EducationComponent,
     BookComponent,
     UsdStdPipe,
+    ProductComponent,
+    ContactComponent,
   ],
   imports: [
     BrowserModule,

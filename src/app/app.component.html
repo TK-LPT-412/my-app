@@ -8,9 +8,9 @@
   <form #loginForm="ngForm" (ngSubmit)="loginUser(loginForm.value)"*ngIf="popup">
     SignIn
     <br> <br>
-    <input type="text" name="name" placeholder="Enter name"   ngModel>
+    <input type="text" minlength="2" required name="name" placeholder="Enter name"   ngModel>
     <br> <br>
-    <input type="password" name="password" placeholder="Enter password"   ngModel>
+    <input type="password"  name="password" placeholder="Enter password"   ngModel>
     <br> <br>
     <button> Login </button>>    
   </form>
@@ -34,9 +34,15 @@
 
 
 
- <app-items *ngIf=" popup == false"></app-items>
+ <!-- <app-items *ngIf=" popup == false"></app-items> -->
 
+ <a  *ngIf=" popup == false" routerLink="home/1" >Items   </a>
+ 
+ <br>
+ <br>
+ <a  *ngIf=" popup == false" routerLink="product" >Product   </a>
 
+<router-outlet></router-outlet>
 
 
 
